@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stage 1: AI Theoretical Exam</title>
+    <link rel="stylesheet" href="index.css">
+    
+    <style>
+        /* Custom CSS for the exam page */
+        body { background-color: #f4f7f6; }
+        .exam-container {
+            max-width: 900px;
+            margin: 150px auto 50px auto;
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            color: #333;
+        }
+        .exam-header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #ddd;
+        }
+        .exam-header h1 { color: #0f4c75; font-size: 2.5em; }
+        .exam-header p { color: #6c757d; }
+        
+        .question-card {
+            border: 1px solid #e9ecef;
+            background-color: #f8f9fa;
+            padding: 20px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+        }
+        .question-card h4 {
+            color: #218838;
+            margin-bottom: 15px;
+            font-size: 1.2em;
+        }
+        .answer-option {
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+        .answer-option:hover {
+            background-color: #e2f0e9;
+        }
+        .answer-option input[type="radio"] {
+            margin-right: 10px;
+            accent-color: #28a745; /* Green radio button color */
+        }
+        .submit-btn {
+            background-color: #28a745;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1em;
+            margin-top: 30px;
+            display: block;
+            width: 100%;
+        }
+        .submit-btn:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <header class="solid-header">
+        </header>
+
+    <main class="exam-container">
+        <div class="exam-header">
+            <h1>Stage 1: AI-Powered Theoretical Exam</h1>
+            <p>This exam assesses your knowledge of traffic laws. You must score 85% or higher to pass and proceed to the next stage.</p>
+        </div>
+        
+        <form method="POST" action="{{ url_for('submit_exam') }}">
+            {% for question in questions %}
+            <div class="question-card">
+                <h4>{{ loop.index }}. {{ question.question_text }}</h4>
+                <div class="answer-options">
+                    <div class="answer-option">
+                        <label>
+                            <input type="radio" name="{{ question.id }}" value="A" required> Option A
+                        </label>
+                    </div>
+                    <div class="answer-option">
+                        <label>
+                            <input type="radio" name="{{ question.id }}" value="B"> Option B
+                        </label>
+                    </div>
+                    <div class="answer-option">
+                        <label>
+                            <input type="radio" name="{{ question.id }}" value="C"> Option C
+                        </label>
+                    </div>
+                    <div class="answer-option">
+                        <label>
+                            <input type="radio" name="{{ question.id }}" value="D"> Option D
+                        </label>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+            <button type="submit" class="submit-btn">Submit Exam and View Results</button>
+        </form>
+    </main>
+</body>
+</html>

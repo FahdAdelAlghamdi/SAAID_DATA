@@ -1,0 +1,30 @@
+// SAAID Trainee Journey
+digraph SAAID_Flowchart_Graphviz {
+	graph [nodesep=0.6 rankdir=LR ranksep=1.0 splines=spline]
+	P1 [label="Phase 1: Theoretical Exam
+
+Concept: SAAID AI Website
+Goal: Assess Traffic Law Knowledge
+Tech: AI, Data Science (3000 Qs)
+Success: 85% Score" color="#00796b" fillcolor="#e0f7fa" fontcolor="#263238" fontsize=10 penwidth=2 shape=box style=filled]
+	P2 [label="Phase 2: Practical Training (Track)
+
+Concept: AI Virtual Instructor Car
+Goal: Fundamental Driving Skills
+Tech: Deep Learning, CV, ROS
+Success: 90% Mastery" color="#00796b" fillcolor="#e0f7fa" fontcolor="#263238" fontsize=10 penwidth=2 shape=box style=filled]
+	P3 [label="Phase 3: Practical Training (Live)
+
+Concept: On-road AI Monitoring
+Goal: Safe Public Driving
+Tech: Advanced AI, Sensor Fusion
+Success: 95% Safety Score" color="#00796b" fillcolor="#e0f7fa" fontcolor="#263238" fontsize=10 penwidth=2 shape=box style=filled]
+	Absher [label="Transfer Data
+to Absher Platform" color="#fdd835" fillcolor="#fff9c4" fontcolor="#263238" fontsize=12 penwidth=2 shape=Mcircle style=filled]
+	P1 -> P2 [label=" SUCCESS " color="#4caf50" fontcolor=gray fontsize=10 penwidth=2]
+	P2 -> P3 [label=" SUCCESS " color="#4caf50" fontcolor=gray fontsize=10 penwidth=2]
+	P3 -> Absher [label=" CERTIFICATION " color="#4caf50" fontcolor=gray fontsize=10 penwidth=2]
+	fontname=Helvetica fontsize=24 label="
+
+SAAID Trainee Journey Flowchart: AI-Driven Licensing" labelloc=t
+}

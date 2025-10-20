@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theoretical Exam Results</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        /* CSS for the results page */
+        body { background-color: #f4f7f6; }
+        .results-container {
+            max-width: 650px;
+            margin: 150px auto 50px auto;
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            color: #333;
+        }
+        .score-display {
+            font-size: 5em;
+            font-weight: bold;
+            margin: 20px 0 10px;
+        }
+        .success-color { color: #28a745; } /* Green for success */
+        .fail-color { color: #dc3545; } /* Red for failure */
+
+        .message-box {
+            font-size: 1.3em;
+            margin-bottom: 30px;
+        }
+        .continue-btn {
+            background-color: #0f4c75;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1em;
+            margin-top: 30px;
+            display: inline-block;
+            transition: background-color 0.3s;
+        }
+        .continue-btn:hover {
+             background-color: #0c3e5a;
+        }
+        .retry-btn {
+            background-color: #dc3545;
+        }
+    </style>
+</head>
+<body>
+    <header class="solid-header">
+        </header>
+
+    <main class="results-container">
+        <h1>Exam Results</h1>
+        
+        <div class="score-display {{ color_class }}">
+            {{ "%.2f"|format(percentage) }}%
+        </div>
+        
+        <p class="message-box">{{ message }}</p>
+        
+        <p>Correct Answers: {{ score }} out of {{ total }}</p>
+        
+        {% if percentage >= 85 %}
+            <a href="{{ url_for('dashboard') }}" class="continue-btn">Proceed to Stage 2 Preparations</a>
+        {% else %}
+            <a href="{{ url_for('subscriptions') }}" class="continue-btn retry-btn">Resubscribe and Try Again</a>
+        {% endif %}
+    </main>
+</body>
+</html>

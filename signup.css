@@ -1,0 +1,157 @@
+/* Body and Form container */
+body {
+    /* Updated background with image and gradient overlay */
+    background-image: linear-gradient(135deg, rgba(15, 76, 117, 0.7), rgba(34, 163, 107, 0.7)), url('img11.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Update the .form-page style in form.css */
+.form-page {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    padding-top: 100px; /* Add top padding to create space for the header */
+}
+
+.form-card {
+    background-color: white;
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+    color: #333;
+    box-sizing: border-box;
+}
+
+.form-header .icon {
+    font-size: 3em;
+    color: #28a745;
+    margin-bottom: 10px;
+}
+
+.form-header h2 {
+    font-size: 2em;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-header p {
+    color: #6c757d;
+    margin-bottom: 30px;
+}
+
+/* Form inputs */
+.input-group {
+    text-align: left;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: bold;
+}
+
+.input-group label i {
+    margin-right: 8px;
+    color: #28a745;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+}
+
+.input-group input:focus {
+    border-color: #28a745;
+    outline: none;
+}
+
+.password-toggle {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #999;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #218838;
+}
+
+.form-footer {
+    margin-top: 20px;
+    color: #6c757d;
+}
+
+.form-footer a {
+    color: #28a745;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.form-footer a:hover {
+    color: #218838;
+}
+
+/* Ensure header links are visible on form pages */
+header .nav-links a,
+header .user-actions a,
+header .language {
+    color: white !important;
+}
+
+/* --- أنماط خاصة بمربع "تذكرني" (Remember Me) --- */
+.remember-me-group {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* يبدأ من اليسار */
+    margin-bottom: 20px;
+    padding-left: 5px; /* ليتماشى مع حقل الإدخال */
+}
+
+.remember-me-group input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+    cursor: pointer;
+    /* لتلوين مربع الاختيار بلون الثيم */
+    accent-color: #28a745; 
+}
+
+.remember-me-group label {
+    color: #555 !important; /* اللون الداكن ليتناسب مع البطاقة */
+    font-weight: normal; 
+    cursor: pointer;
+}

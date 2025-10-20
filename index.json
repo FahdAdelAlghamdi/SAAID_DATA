@@ -1,0 +1,32 @@
+{
+  "en": {
+    "home": "Home",
+    "about_program": "About Program",
+    "subscriptions": "Subscriptions",
+    "login": "Login",
+    "signup": "Sign Up",
+    "hero_title": "AI-Powered Driving Training",
+    "hero_description": "Join the modern training revolution with AI technology and advanced vehicles for safe and professional driving.",
+    "ai_training": "AI Training",
+    "safety_first": "Safety First",
+    "smart_vehicles": "Smart Vehicles",
+    "licensed": "Licensed",
+    "get_started": "Get Started",
+    "learn_more": "Learn More"
+  },
+  "ar": {
+    "home": "الرئيسية",
+    "about_program": "عن البرنامج",
+    "subscriptions": "الاشتراكات",
+    "login": "تسجيل الدخول",
+    "signup": "إنشاء حساب",
+    "hero_title": "تدريب قيادة يعتمد على الذكاء الاصطناعي",
+    "hero_description": "انضم إلى ثورة التدريب الحديثة مع تكنولوجيا الذكاء الاصطناعي والمركبات المتقدمة لقيادة آمنة واحترافية.",
+    "ai_training": "تدريب بالذكاء الاصطناعي",
+    "safety_first": "السلامة أولاً",
+    "smart_vehicles": "مركبات ذكية",
+    "licensed": "مرخصة",
+    "get_started": "ابدأ الآن",
+    "learn_more": "تعلم المزيد"
+  }
+}
