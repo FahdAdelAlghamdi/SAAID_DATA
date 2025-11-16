@@ -9,103 +9,100 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">
-                <a href="index.html">SAAID</a>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="about.html">About Program</a></li>
-                <li><a href="subscriptions.html">Subscriptions</a></li>
-            </ul>
-            <div class="user-actions">
-                <div class="language-switcher">
-                    <button class="lang-btn">
-                        <i class="fas fa-globe"></i>
-                        <span class="lang-text">English</span>
-                    </button>
-                    <div class="lang-dropdown">
-                        <a href="#" class="lang-option" data-lang="en">English</a>
-                        <a href="#" class="lang-option" data-lang="ar">العربية</a>
-                    </div>
-                </div>
-                <a href="login.html" class="login-btn">Login</a>
-                <a href="signup.html" class="signup-btn">Sign Up</a>
-            </div>
-        </nav>
-    </header>
+   <header>
+  <nav>
+    <div class="logo">
+      <a href="index.html" class="trans" data-key="logo">SAAID</a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html" class="trans" data-key="home">Home</a></li>
+      <li><a href="about.html" class="trans" data-key="about">About Program</a></li>
+      <li><a href="subscriptions.html" class="trans" data-key="subscriptions">Subscriptions</a></li>
+    </ul>
+    <div class="user-actions">
+      <div class="language-switcher">
+        <select id="language-select" aria-label="Choose Language">
+          <option value="en">English</option>
+          <option value="ar">العربية</option>
+        </select>
+      </div>
+      <a href="login.html" class="login-btn trans" data-key="login">Login</a>
+      <a href="signup.html" class="signup-btn trans" data-key="signup">Sign Up</a>
+    </div>
+  </nav>
+</header>
 
-    <main class="hero-section">
-        <div class="background-overlay"></div>
-        <div class="content">
-            <h1>AI-Powered Driving <span class="highlight">Training</span></h1>
-            <p>Join the modern training revolution with AI technology and advanced vehicles for safe and professional driving.</p>
+<main class="hero-section">
+  <div class="background-overlay"></div>
+  <div class="content">
+    <h1 class="trans" data-key="heroTitle">AI-Powered Driving <span class="highlight">Training</span></h1>
+    <p class="trans" data-key="heroSubtitle">Join the modern training revolution with AI technology and advanced vehicles for safe and professional driving.</p>
 
-            <div class="features">
-                <div class="feature-item">
-                    <div class="icon"><i class="fas fa-brain"></i></div>
-                    <span>AI Training</span>
-                </div>
-                <div class="feature-item">
-                    <div class="icon"><i class="fas fa-shield-alt"></i></div>
-                    <span>Safety First</span>
-                </div>
-                <div class="feature-item">
-                    <div class="icon"><i class="fas fa-car"></i></div>
-                    <span>Smart Vehicles</span>
-                </div>
-                <div class="feature-item">
-                    <div class="icon"><i class="fas fa-certificate"></i></div>
-                    <span>Licensed</span>
-                </div>
-            </div>
+    <div class="features">
+      <div class="feature-item">
+        <div class="icon"><i class="fas fa-brain"></i></div>
+        <span class="trans" data-key="featureAI">AI Training</span>
+      </div>
+      <div class="feature-item">
+        <div class="icon"><i class="fas fa-shield-alt"></i></div>
+        <span class="trans" data-key="featureSafety">Safety First</span>
+      </div>
+      <div class="feature-item">
+        <div class="icon"><i class="fas fa-car"></i></div>
+        <span class="trans" data-key="featureSmart">Smart Vehicles</span>
+      </div>
+      <div class="feature-item">
+        <div class="icon"><i class="fas fa-certificate"></i></div>
+        <span class="trans" data-key="featureLicensed">Licensed</span>
+      </div>
+    </div>
 
-            <div class="cta-buttons">
-                <a href="subscriptions.html" class="get-started">Get Started</a>
-                <a href="about.html" class="learn-more">Learn More</a>
-            </div>
-        </div>
-    </main>
+    <div class="cta-buttons">
+      <a href="subscriptions.html" class="get-started trans" data-key="buttonGetStarted">Get Started</a>
+      <a href="about.html" class="learn-more trans" data-key="buttonLearnMore">Learn More</a>
+    </div>
+  </div>
+</main>
 
-    <footer>
-        <div class="footer-container">
-            <div class="footer-section about">
-                <h3>SAAID</h3>
-                <p>Your AI-Powered Driving Training Partner. Join the modern training revolution for safe and professional driving.</p>
-            </div>
-            
-            <div class="footer-section links">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Program</a></li>
-                    <li><a href="subscriptions.html">Subscriptions</a></li>
-                    <li><a href="login.html">Login</a></li>
-                </ul>
-            </div>
-            
-            <div class="footer-section contact">
-                <h3>Contact Us</h3>
-                <p><i class="fas fa-map-marker-alt"></i> Riyadh, Saudi Arabia</p>
-                <p><i class="fas fa-phone"></i> +966 50 123 4567</p>
-                <p><i class="fas fa-envelope"></i> support@saaid.com</p>
-            </div>
-            
-            <div class="footer-section social">
-                <h3>Follow Us</h3>
-                <div class="social-links">
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            &copy; 2024 SAAID. All rights reserved.
-        </div>
-    </footer>
+<footer>
+  <div class="footer-container">
+    <div class="footer-section about">
+      <h3 class="trans" data-key="footerTitle">SAAID</h3>
+      <p class="trans" data-key="footerSubtitle">Your AI-Powered Driving Training Partner. Join the modern training revolution for safe and professional driving.</p>
+    </div>
     
-    <script src="index.js"></script>
+    <div class="footer-section links">
+      <h3 class="trans" data-key="footerQuickLinksTitle">Quick Links</h3>
+      <ul>
+        <li><a href="index.html" class="trans" data-key="home">Home</a></li>
+        <li><a href="about.html" class="trans" data-key="about">About Program</a></li>
+        <li><a href="subscriptions.html" class="trans" data-key="subscriptions">Subscriptions</a></li>
+        <li><a href="login.html" class="trans" data-key="login">Login</a></li>
+      </ul>
+    </div>
+    
+    <div class="footer-section contact">
+      <h3 class="trans" data-key="footerContactUs">Contact Us</h3>
+      <p><i class="fas fa-map-marker-alt"></i> <span class="trans" data-key="footerAddress">Riyadh, Saudi Arabia</span></p>
+      <p><i class="fas fa-phone"></i> <span class="trans" data-key="footerPhone">+966 50 123 4567</span></p>
+      <p><i class="fas fa-envelope"></i> <span class="trans" data-key="footerEmail">support@saaid.com</span></p>
+    </div>
+    
+    <div class="footer-section social">
+      <h3 class="trans" data-key="footerFollowUs">Follow Us</h3>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    &copy; 2024 SAAID. <span class="trans" data-key="footerRights">All rights reserved.</span>
+  </div>
+</footer>
+
+    
+  <script src="index.js"></script>
 </body>
 </html>
