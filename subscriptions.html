@@ -9,141 +9,141 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <header>
-        <nav>
-           <div class="logo">
-                <a href="index.html">SAAID</a>
-            </div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Program</a></li>
-                <li><a href="subscriptions.html">Subscriptions</a></li>
-            </ul>
-        <div class="user-actions">
-            <div class="language-switcher">
-                <button class="lang-btn">
-                    <i class="fas fa-globe"></i>
-                    <span class="lang-text">English</span>
-                </button>
-                <div class="lang-dropdown">
-                    <a href="#" class="lang-option" data-lang="en">English</a>
-                    <a href="#" class="lang-option" data-lang="ar">العربية</a>
-                </div>
-            </div>
-            <a href="login.html" class="login-btn">Login</a>
-            <a href="signup.html" class="signup-btn">Sign Up</a>
-        </div>
-        </nav>
-    </header>
+   <header>
+  <nav>
+    <div class="logo">
+      <a href="index.html" class="trans" data-key="logo">SAAID</a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html" class="trans" data-key="home">Home</a></li>
+      <li><a href="about.html" class="trans" data-key="about">About Program</a></li>
+      <li><a href="subscriptions.html" class="trans" data-key="subscriptions">Subscriptions</a></li>
+    </ul>
+    <div class="user-actions">
+      <div class="language-switcher">
+        <select id="language-select" aria-label="Choose Language">
+          <option value="en">English</option>
+          <option value="ar">العربية</option>
+        </select>
+      </div>
+      <a href="login.html" class="login-btn trans" data-key="login">Login</a>
+      <a href="signup.html" class="signup-btn trans" data-key="signup">Sign Up</a>
+    </div>
+  </nav>
+</header>
+
 
     <main>
-        <div class="page-header subscription-header">
-            <h1>Subscription Plans</h1>
-            <p>Choose the right plan for you and start your journey in safe driving training with AI technology</p>
+  <div class="page-header subscription-header">
+    <h1><span class="trans" data-key="subsTitle">Subscription Plans</span></h1>
+    <p><span class="trans" data-key="subsSubtitle">Choose the right plan for you and start your journey in safe driving training with AI technology</span></p>
+  </div>
+
+  <section class="container">
+    <div class="plans-container">
+      <div class="plan-card basic-plan">
+        <h2><span class="trans" data-key="basicPlan">Basic Plan</span></h2>
+        <p class="plan-desc"><span class="trans" data-key="basicPlanDesc">Basic training plan without additional materials</span></p>
+        <p class="price"><span class="trans" data-key="basicPrice">900</span> <span class="currency">SAR</span></p>
+        <p class="duration"><span class="trans" data-key="basicDuration">for 10 days</span></p>
+        <div class="plan-features">
+          <p class="features-title"><span class="trans" data-key="featuresTitle">Features Included:</span></p>
+          <ul>
+            <li><i class="fas fa-check"></i> <span class="trans" data-key="featureAIvehicles">Access to AI-powered vehicles</span></li>
+            <li><i class="fas fa-check"></i> <span class="trans" data-key="feature3Stages">Training on 3 basic stages</span></li>
+            <li><i class="fas fa-check"></i> <span class="trans" data-key="featureProgress">Progress tracking and results</span></li>
+            <li><i class="fas fa-check"></i> <span class="trans" data-key="featureBasicSupport">Basic technical support</span></li>
+          </ul>
+          <p class="not-included-title"><span class="trans" data-key="notIncludedTitle">Not Included:</span></p>
+          <ul class="not-included">
+            <li><i class="fas fa-times"></i> <span class="trans" data-key="notCompFile">Comprehensive file with all success requirements</span></li>
+            <li><i class="fas fa-times"></i> <span class="trans" data-key="notVideo">Detailed educational video clips</span></li>
+            <li><i class="fas fa-times"></i> <span class="trans" data-key="notExplanation">Detailed explanation of the three stages</span></li>
+            <li><i class="fas fa-times"></i> <span class="trans" data-key="notPremiumSupport">24/7 premium technical support</span></li>
+          </ul>
         </div>
+        <a href="#" class="plan-button basic-button"><span class="trans" data-key="chooseBasic">Choose Basic Plan</span></a>
+      </div>
 
-        <section class="container">
-            <div class="plans-container">
-                <div class="plan-card basic-plan">
-                    <h2>Basic Plan</h2>
-                    <p class="plan-desc">Basic training plan without additional materials</p>
-                    <p class="price">900 <span class="currency">SAR</span></p>
-                    <p class="duration">for 10 days</p>
-                    <div class="plan-features">
-                        <p class="features-title">Features Included:</p>
-                        <ul>
-                            <li><i class="fas fa-check"></i> Access to AI-powered vehicles</li>
-                            <li><i class="fas fa-check"></i> Training on 3 basic stages</li>
-                            <li><i class="fas fa-check"></i> Progress tracking and results</li>
-                            <li><i class="fas fa-check"></i> Basic technical support</li>
-                        </ul>
-                        <p class="not-included-title">Not Included:</p>
-                        <ul class="not-included">
-                            <li><i class="fas fa-times"></i> Comprehensive file with all success requirements</li>
-                            <li><i class="fas fa-times"></i> Detailed educational video clips</li>
-                            <li><i class="fas fa-times"></i> Detailed explanation of the three stages</li>
-                            <li><i class="fas fa-times"></i> 24/7 premium technical support</li>
-                        </ul>
-                    </div>
-                    <a href="#" class="plan-button basic-button">Choose Basic Plan</a>
-                </div>
+      <div class="plan-card premium-plan">
+        <span class="most-popular"><span class="trans" data-key="mostPopular">Most Popular</span></span>
+        <h2><span class="trans" data-key="premiumPlan">Premium Plan</span></h2>
+        <p class="plan-desc"><span class="trans" data-key="premiumPlanDesc">Comprehensive plan with all educational materials and premium support</span></p>
+        <p class="price"><span class="trans" data-key="premiumPrice">950</span> <span class="currency">SAR</span></p>
+        <p class="duration"><span class="trans" data-key="premiumDuration">for 15 days</span></p>
+        <div class="plan-features">
+          <p class="features-title"><span class="trans" data-key="featuresTitle">Features Included:</span></p>
+          <ul>
+            <li><i class="fas fa-check"></i> <span class="trans" data-key="featureAllBasic">All basic plan features</span></li>
+            <li><i class="fas fa-check"></i> <span class="trans" data-key="featureCompFile">Comprehensive file with all success requirements</span></li>
+            <li><i class="fas fa-check"></i> <span class="trans" data-key="featureVideo">Detailed educational video clips</span></li>
+            <li><i class="fas fa-check"></i> <span class="trans" data-key="featureExplanation">Detailed explanation of the three stages</span></li>
+            <li><i class="fas fa-check"></i> <span class="trans" data-key="featurePremiumSupport">24/7 premium technical support</span></li>
+            <li><i class="fas fa-check"></i> <span class="trans" data-key="featureTips">Success tips and guidance</span></li>
+            <li><i class="fas fa-check"></i> <span class="trans" data-key="featureAttempts">Additional training attempts</span></li>
+          </ul>
+          <p class="premium-materials-title"><span class="trans" data-key="premiumMaterialsTitle">Premium Educational Materials:</span></p>
+          <ul class="premium-materials">
+            <li><i class="fas fa-file-pdf"></i> <span class="trans" data-key="premiumPDF">Comprehensive PDF guide for three stages</span></li>
+            <li><i class="fas fa-video"></i> <span class="trans" data-key="premiumVideos">High-quality educational videos</span></li>
+            <li><i class="fas fa-book"></i> <span class="trans" data-key="premiumBook">Success tips and strategies</span></li>
+          </ul>
+        </div>
+        <a href="#" class="plan-button premium-button"><span class="trans" data-key="choosePremium">Choose Premium Plan</span></a>
+      </div>
+    </div>
 
-                <div class="plan-card premium-plan">
-                    <span class="most-popular">Most Popular</span>
-                    <h2>Premium Plan</h2>
-                    <p class="plan-desc">Comprehensive plan with all educational materials and premium support</p>
-                    <p class="price">950 <span class="currency">SAR</span></p>
-                    <p class="duration">for 15 days</p>
-                    <div class="plan-features">
-                        <p class="features-title">Features Included:</p>
-                        <ul>
-                            <li><i class="fas fa-check"></i> All basic plan features</li>
-                            <li><i class="fas fa-check"></i> Comprehensive file with all success requirements</li>
-                            <li><i class="fas fa-check"></i> Detailed educational video clips</li>
-                            <li><i class="fas fa-check"></i> Detailed explanation of the three stages</li>
-                            <li><i class="fas fa-check"></i> 24/7 premium technical support</li>
-                            <li><i class="fas fa-check"></i> Success tips and guidance</li>
-                            <li><i class="fas fa-check"></i> Additional training attempts</li>
-                        </ul>
-                        <p class="premium-materials-title">Premium Educational Materials:</p>
-                        <ul class="premium-materials">
-                            <li><i class="fas fa-file-pdf"></i> Comprehensive PDF guide for three stages</li>
-                            <li><i class="fas fa-video"></i> High-quality educational videos</li>
-                            <li><i class="fas fa-book"></i> Success tips and strategies</li>
-                        </ul>
-                    </div>
-                    <a href="#" class="plan-button premium-button">Choose Premium Plan</a>
-                </div>
-            </div>
+    <div class="info-box">
+      <h3><span class="trans" data-key="infoTitle">Important Training Information</span></h3>
+      <ul>
+        <li><span class="trans" data-key="infoScore">Must achieve a minimum 85% success rate in each of the three stages</span></li>
+        <li><span class="trans" data-key="infoRepeat">In case of failure in any stage, re-subscription and payment is required</span></li>
+        <li><span class="trans" data-key="infoLicense">Upon successful completion of all stages, data is transferred directly to Absher for license issuance</span></li>
+        <li><span class="trans" data-key="infoTech">All vehicles are equipped with the latest AI technology and high-quality sensors</span></li>
+      </ul>
+    </div>
+  </section>
+</main>
 
-            <div class="info-box">
-                <h3>Important Training Information</h3>
-                <ul>
-                    <li>Must achieve a minimum 85% success rate in each of the three stages</li>
-                    <li>In case of failure in any stage, re-subscription and payment is required</li>
-                    <li>Upon successful completion of all stages, data is transferred directly to Absher for license issuance</li>
-                    <li>All vehicles are equipped with the latest AI technology and high-quality sensors</li>
-                </ul>
-            </div>
-        </section>
-    </main>
     
-    <footer>
-        <div class="footer-container">
-            <div class="footer-section about">
-                <h3>SAAID</h3>
-                <p>Your AI-Powered Driving Training Partner. Join the modern training revolution for safe and professional driving.</p>
-            </div>
-            
-            <div class="footer-section links">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Program</a></li>
-                    <li><a href="subscriptions.html">Subscriptions</a></li>
-                    <li><a href="login.html">Login</a></li>
-                </ul>
-            </div>
-            
-            <div class="footer-section contact">
-                <h3>Contact Us</h3>
-                <p><i class="fas fa-map-marker-alt"></i> Riyadh, Saudi Arabia</p>
-                <p><i class="fas fa-phone"></i> +966 50 123 4567</p>
-                <p><i class="fas fa-envelope"></i> support@saaid.com</p>
-            </div>
-            
-            <div class="footer-section social">
-                <h3>Follow Us</h3>
-                <div class="social-links">
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            &copy; 2024 SAAID. All rights reserved.
-        </div>
-    </footer>
+    
+<footer>
+  <div class="footer-container">
+    <div class="footer-section about">
+      <h3 class="trans" data-key="footerTitle">SAAID</h3>
+      <p class="trans" data-key="footerSubtitle">Your AI-Powered Driving Training Partner. Join the modern training revolution for safe and professional driving.</p>
+    </div>
+    
+    <div class="footer-section links">
+      <h3 class="trans" data-key="footerQuickLinksTitle">Quick Links</h3>
+      <ul>
+        <li><a href="index.html" class="trans" data-key="home">Home</a></li>
+        <li><a href="about.html" class="trans" data-key="about">About Program</a></li>
+        <li><a href="subscriptions.html" class="trans" data-key="subscriptions">Subscriptions</a></li>
+        <li><a href="login.html" class="trans" data-key="login">Login</a></li>
+      </ul>
+    </div>
+    
+    <div class="footer-section contact">
+      <h3 class="trans" data-key="footerContactUs">Contact Us</h3>
+      <p><i class="fas fa-map-marker-alt"></i> <span class="trans" data-key="footerAddress">Riyadh, Saudi Arabia</span></p>
+      <p><i class="fas fa-phone"></i> <span class="trans" data-key="footerPhone">+966 50 123 4567</span></p>
+      <p><i class="fas fa-envelope"></i> <span class="trans" data-key="footerEmail">support@saaid.com</span></p>
+    </div>
+    
+    <div class="footer-section social">
+      <h3 class="trans" data-key="footerFollowUs">Follow Us</h3>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    &copy; 2024 SAAID. <span class="trans" data-key="footerRights">All rights reserved.</span>
+  </div>
+</footer>
+    <script src="index.js"></script>
 </body>
 </html>
