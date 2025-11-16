@@ -1,89 +1,236 @@
+const translations = {
+  en: {
+    logo: "SAAID",
+    home: "Home",
+    about: "About Program",
+    subscriptions: "Subscriptions",
+    login: "Login",
+    signup: "Sign Up",
+    heroTitle: "AI-Powered Driving <span class='highlight'>Training</span>",
+    heroSubtitle: "Join the modern training revolution with AI technology and advanced vehicles for safe and professional driving.",
+    featureAI: "AI Training",
+    featureSafety: "Safety First",
+    featureSmart: "Smart Vehicles",
+    featureLicensed: "Licensed",
+    buttonGetStarted: "Get Started",
+    buttonLearnMore: "Learn More",
+    footerTitle: "SAAID",
+    footerSubtitle: "Your AI-Powered Driving Training Partner. Join the modern training revolution for safe and professional driving.",
+    footerQuickLinksTitle: "Quick Links",
+    footerContactUs: "Contact Us",
+    footerAddress: "Riyadh, Saudi Arabia",
+    footerPhone: "+966 50 123 4567",
+    footerEmail: "support@saaid.com",
+    footerFollowUs: "Follow Us",
+    footerRights: "All rights reserved.",
+    subsTitle: "Subscription Plans",
+    subsSubtitle: "Choose the right plan for you and start your journey in safe driving training with AI technology",
+    basicPlan: "Basic Plan",
+    basicPlanDesc: "Basic training plan without additional materials",
+    basicPrice: "900",
+    basicDuration: "for 10 days",
+    featuresTitle: "Features Included:",
+    featureAIvehicles: "Access to AI-powered vehicles",
+    feature3Stages: "Training on 3 basic stages",
+    featureProgress: "Progress tracking and results",
+    featureBasicSupport: "Basic technical support",
+    notIncludedTitle: "Not Included:",
+    notCompFile: "Comprehensive file with all success requirements",
+    notVideo: "Detailed educational video clips",
+    notExplanation: "Detailed explanation of the three stages",
+    notPremiumSupport: "24/7 premium technical support",
+    chooseBasic: "Choose Basic Plan",
+    mostPopular: "Most Popular",
+    premiumPlan: "Premium Plan",
+    premiumPlanDesc: "Comprehensive plan with all educational materials and premium support",
+    premiumPrice: "950",
+    premiumDuration: "for 15 days",
+    featureAllBasic: "All basic plan features",
+    featureCompFile: "Comprehensive file with all success requirements",
+    featureVideo: "Detailed educational video clips",
+    featureExplanation: "Detailed explanation of the three stages",
+    featurePremiumSupport: "24/7 premium technical support",
+    featureTips: "Success tips and guidance",
+    featureAttempts: "Additional training attempts",
+    premiumMaterialsTitle: "Premium Educational Materials:",
+    premiumPDF: "Comprehensive PDF guide for three stages",
+    premiumVideos: "High-quality educational videos",
+    premiumBook: "Success tips and strategies",
+    choosePremium: "Choose Premium Plan",
+    infoTitle: "Important Training Information",
+    infoScore: "Must achieve a minimum 85% success rate in each of the three stages",
+    infoRepeat: "In case of failure in any stage, re-subscription and payment is required",
+    infoLicense: "Upon successful completion of all stages, data is transferred directly to Absher for license issuance",
+    infoTech: "All vehicles are equipped with the latest AI technology and high-quality sensors",
+    aboutTitle: "About SAAID Program",
+    aboutSubtitle: "AI-Powered Driving Training Program for Vision 2030",
+    aboutStagesTitle: "Three Training Stages",
+    aboutPassingNote: "Required passing score: 85% for each stage",
+    stage1Num: "1",
+    stage1Title: "Stage 1: Theoretical Exam",
+    stageConceptTitle: "Concept",
+    stage1Concept: 'In this initial phase, the user logs on to the "SAAID" website to take a virtual theoretical exam powered by Artificial Intelligence. The core objective is to accurately assess their knowledge of traffic laws and road signs. The system intelligently selects a unique set of 100 questions for each user from a massive database of 3,000 questions, ensuring a precise and unbiased evaluation. The user must achieve a passing score of 85% or higher to advance to the next phase.',
+    stageGoalTitle: "Goal",
+    stage1Goal: "To accurately measure the user's theoretical knowledge base before they commence any practical, hands-on training.",
+    stage2Num: "2",
+    stage2Title: "Stage 2: On-Track Training",
+    stage2Concept: "After passing the theoretical exam, the user moves to a physical training car on a closed track. This vehicle is equipped with an advanced AI system that acts as a virtual instructor. The AI provides precise, real-time voice commands and instructions for critical maneuvers like turns, U-turns, and braking. The system uses a suite of sensors and cameras to instantly and objectively evaluate the user's performance, ensuring they learn the correct techniques in a controlled and fully safe environment.",
+    stage2Goal: "To teach users the fundamental practical driving skills in a fully controlled, monitored, and objectively assessed setting.",
+    stage3Num: "3",
+    stage3Title: "Stage 3: Real-World Driving",
+    stage3Concept: "This is the final and most critical phase, where the trainee applies their skills on real public roads. The vehicle's AI evolves into a proactive safety co-pilot, providing real-time alerts and activating autonomous emergency driving functions when necessary to prevent accidents. Upon successful completion, the trainee's data is automatically transferred and linked to the 'Absher' platform for final licensing procedures.",
+    stage3Goal: "To confirm the trainee's ability to drive independently and safely, managing risks on public roads, thereby paving the way for the issuance of their driving license.",
+    licenseInfo: "Upon successfully completing all stages of training and passing the required tests, the applicant's data is transferred directly to the Absher platform for the immediate issuance of the driving license",
+    loginTitle: "Login",
+    loginSubtitle: "Enter your details to access your account",
+    emailLabel: "Email",
+    passwordLabel: "Password",
+    rememberMeLabel: "Remember Me",
+    loginButton: "Login",
+    noAccountText: "Don't have an account?",
+    createAccountLink: "Create Account",
+     createAccountTitle: "Create New Account",
+    createAccountSubtitle: "Complete the required information to join SAAID program",
+    fullNameLabel: "Full Name",
+    birthDateLabel: "Birth Date",
+    nationalIdLabel: "National ID",
+    emailLabel: "Email",
+    phoneNumberLabel: "Phone Number",
+    passwordLabel: "Password",
+    confirmPasswordLabel: "Confirm Password",
+    keepLoggedInLabel: "Keep me logged in after sign up",
+    createAccountButton: "Create Account",
+    haveAccountText: "Already have an account?",
+    loginLink: "Login"
+  },
+  ar: {
+    logo: "SAAID",
+    home: "الرئيسية",
+    about: "عن البرنامج",
+    subscriptions: "الاشتراكات",
+    login: "تسجيل الدخول",
+    signup: "إنشاء حساب",
+    heroTitle: "برنامج تدريب القيادة المدعوم بالذكاء الاصطناعي",
+    heroSubtitle: "انضم إلى ثورة التدريب الحديثة بتقنية الذكاء الاصطناعي والمركبات المتطورة لقيادة آمنة واحترافية.",
+    featureAI: "تدريب الذكاء الاصطناعي",
+    featureSafety: "السلامة أولاً",
+    featureSmart: "مركبات ذكية",
+    featureLicensed: "مرخص",
+    buttonGetStarted: "ابدأ الآن",
+    buttonLearnMore: "تعرف أكثر",
+    footerTitle: "SAAID",
+    footerSubtitle: "شريك تدريب القيادة المدعوم بالذكاء الاصطناعي الخاص بك. انضم إلى الثورة الحديثة للتدريب لقيادة آمنة واحترافية.",
+    footerQuickLinksTitle: "روابط سريعة",
+    footerContactUs: "اتصل بنا",
+    footerAddress: "الرياض، المملكة العربية السعودية",
+    footerPhone: "+966 50 123 4567",
+    footerEmail: "support@saaid.com",
+    footerFollowUs: "تابعنا",
+    footerRights: "جميع الحقوق محفوظة.",
+    subsTitle: "باقات الاشتراك",
+    subsSubtitle: "اختر الباقة الأنسب لك وابدأ رحلتك في التدريب الآمن على القيادة بتقنية الذكاء الاصطناعي",
+    basicPlan: "الباقة الأساسية",
+    basicPlanDesc: "باقة تدريب أساسية بدون مواد إضافية",
+    basicPrice: "٩٠٠",
+    basicDuration: "لمدة ١٠ أيام",
+    featuresTitle: "المميزات المتوفرة:",
+    featureAIvehicles: "الوصول إلى مركبات مدعومة بالذكاء الاصطناعي",
+    feature3Stages: "تدريب على ٣ مراحل أساسية",
+    featureProgress: "متابعة التقدم ونتائج التدريب",
+    featureBasicSupport: "دعم فني أساسي",
+    notIncludedTitle: "غير متوفر:",
+    notCompFile: "ملف شامل بجميع متطلبات النجاح",
+    notVideo: "مقاطع فيديو تعليمية مفصلة",
+    notExplanation: "شرح مفصل للثلاث مراحل",
+    notPremiumSupport: "دعم فني مميز على مدار الساعة",
+    chooseBasic: "اختر الباقة الأساسية",
+    mostPopular: "الأكثر شيوعًا",
+    premiumPlan: "الباقة المميزة",
+    premiumPlanDesc: "باقة شاملة بجميع المواد والدعم الفني المميز",
+    premiumPrice: "٩٥٠",
+    premiumDuration: "لمدة ١٥ يوم",
+    featureAllBasic: "جميع مميزات الباقة الأساسية",
+    featureCompFile: "ملف شامل بجميع متطلبات النجاح",
+    featureVideo: "مقاطع فيديو تعليمية مفصلة",
+    featureExplanation: "شرح مفصل للثلاث مراحل",
+    featurePremiumSupport: "دعم فني مميز على مدار الساعة",
+    featureTips: "إرشادات ونصائح للنجاح",
+    featureAttempts: "محاولات تدريب اضافية",
+    premiumMaterialsTitle: "مواد تعليمية مميزة:",
+    premiumPDF: "دليل PDF شامل للثلاث مراحل",
+    premiumVideos: "فيديوهات تعليمية عالية الجودة",
+    premiumBook: "نصائح واستراتيجيات النجاح",
+    choosePremium: "اختر الباقة المميزة",
+    infoTitle: "معلومات تدريبية هامة",
+    infoScore: "يجب تحقيق معدل نجاح لا يقل عن ٨٥٪ في كل مرحلة من المراحل الثلاث",
+    infoRepeat: "في حال الرسوب في أي مرحلة يجب إعادة الاشتراك والدفع",
+    infoLicense: "عند إتمام جميع المراحل بنجاح، يتم نقل البيانات مباشرة لأبشر لإصدار الرخصة",
+    infoTech: "جميع المركبات مجهزة بأحدث تقنيات الذكاء الاصطناعي وأجهزة الاستشعار المتطورة",
+    aboutTitle: "عن برنامج SAAID",
+    aboutSubtitle: "برنامج تدريب القيادة المدعوم بالذكاء الاصطناعي لرؤية 2030",
+    aboutStagesTitle: "المراحل التدريبية الثلاث",
+    aboutPassingNote: "معدل النجاح المطلوب: 85% لكل مرحلة",
+    stage1Num: "1",
+    stage1Title: "المرحلة الأولى: الامتحان النظري",
+    stageConceptTitle: "المفهوم",
+    stage1Concept: 'في هذه المرحلة، يقوم المستخدم بتسجيل الدخول إلى موقع "SAAID" لتقديم امتحان نظري افتراضي مدعوم بتقنية الذكاء الاصطناعي. الهدف الأساسي هو تقييم معرفته بقوانين المرور وعلامات الطريق بدقة. النظام يختار مجموعة فريدة من 100 سؤال لكل مستخدم من قاعدة بيانات ضخمة تحتوي على 3000 سؤال، لضمان تقييم دقيق وموضوعي. يجب على المستخدم تحقيق معدل نجاح 85% أو أكثر للانتقال إلى المرحلة التالية.',
+    stageGoalTitle: "الهدف",
+    stage1Goal: "قياس المعرفة النظرية للمستخدم بدقة قبل البدء في التدريب العملي.",
+    stage2Num: "2",
+    stage2Title: "المرحلة الثانية: التدريب العملي داخل المسار",
+    stage2Concept: "بعد اجتياز الامتحان النظري، ينتقل المستخدم إلى سيارة تدريب فعلية على مضمار مغلق. تكون هذه السيارة مزودة بنظام ذكاء اصطناعي متقدم يعمل كمدرب افتراضي ويوفر أوامر صوتية دقيقة بالوقت الحقيقي للمناورات المهمة مثل الانعطاف والالتفاف والتوقف. يستخدم النظام مجموعة من المستشعرات والكاميرات لتقييم أداء المستخدم بشكل فوري وموضوعي، لضمان تعلم التقنيات الصحيحة في بيئة آمنة ومراقبة تمامًا.",
+    stage2Goal: "تعليم المستخدمين المهارات العملية الأساسية للقيادة في بيئة مراقبة وموضوعية.",
+    stage3Num: "3",
+    stage3Title: "المرحلة الثالثة: القيادة في العالم الحقيقي",
+    stage3Concept: "هذه المرحلة الأخيرة والأكثر أهمية، حيث يطبق المتدرب مهاراته في الطرق العامة. يتحول نظام الذكاء الاصطناعي في السيارة إلى مساعد أمان نشط، يوفر تنبيهات في الوقت الحقيقي ويفعل وظائف القيادة الطارئة لتجنب الحوادث عند الحاجة. عند الانتهاء بنجاح، يتم نقل بيانات المتدرب تلقائيًا وربطها بمنصة ’أبشر‘ لإجراءات الترخيص النهائية.",
+    stage3Goal: "تأكيد قدرة المتدرب على القيادة بشكل مستقل وآمن مع إدارة المخاطر على الطرق العامة، مما يمهد لإصدار رخصة القيادة.",
+    licenseInfo: "عند الانتهاء بنجاح من جميع مراحل التدريب واجتياز الاختبارات، يتم نقل بيانات المتقدم مباشرة إلى منصة ’أبشر‘ لإصدار رخصة القيادة على الفور.",
+    loginTitle: "تسجيل الدخول",
+    loginSubtitle: "أدخل بياناتك للوصول إلى حسابك",
+    emailLabel: "البريد الإلكتروني",
+    passwordLabel: "كلمة المرور",
+    rememberMeLabel: "تذكرني",
+    loginButton: "دخول",
+    noAccountText: "ليس لديك حساب؟",
+    createAccountLink: "انشئ حساب",
+    createAccountTitle: "إنشاء حساب جديد",
+    createAccountSubtitle: "أكمل المعلومات المطلوبة للانضمام إلى برنامج SAAID",
+    fullNameLabel: "الاسم الكامل",
+    birthDateLabel: "تاريخ الميلاد",
+    nationalIdLabel: "الهوية الوطنية",
+    emailLabel: "البريد الإلكتروني",
+    phoneNumberLabel: "رقم الهاتف",
+    passwordLabel: "كلمة المرور",
+    confirmPasswordLabel: "تأكيد كلمة المرور",
+    keepLoggedInLabel: "ابق مسجلاً بعد التسجيل",
+    createAccountButton: "إنشاء حساب",
+    haveAccountText: "هل لديك حساب بالفعل؟",
+    loginLink: "تسجيل الدخول"
+  }
+};
+
+function setLanguage(lang) {
+  localStorage.setItem('language', lang);
+  document.querySelectorAll('.trans').forEach(el => {
+    const key = el.getAttribute('data-key');
+    if (translations[lang][key]) {
+      // استخدم innerHTML للحفاظ على التنسيق داخل العناصر
+      el.innerHTML = translations[lang][key];
+    }
+  });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
-    // تحديد العناصر الأساسية
-    const langBtn = document.querySelector('.lang-btn');
-    const langDropdown = document.querySelector('.lang-dropdown');
-    const langOptions = document.querySelectorAll('.lang-option');
-    const langText = document.querySelector('.lang-text');
-    const html = document.documentElement; // عنصر <html> لتغيير اتجاه الصفحة
-
-    let translations = {}; // لتخزين الترجمات
-
-    // وظيفة لتحميل ملف الترجمة
-    async function fetchTranslations() {
-        try {
-            const response = await fetch('translation.json');
-            translations = await response.json();
-            // بعد التحميل، طبق اللغة الافتراضية (أو المحفوظة في localStorage)
-            const savedLang = localStorage.getItem('lang') || 'en';
-            setLanguage(savedLang);
-        } catch (error) {
-            console.error('Error fetching translations:', error);
-        }
-    }
-
-    // وظيفة لتغيير اللغة
-    function setLanguage(lang) {
-        if (!translations[lang]) return;
-
-        // تغيير اتجاه الصفحة (ltr/rtl)
-        if (lang === 'ar') {
-            html.setAttribute('dir', 'rtl');
-            html.lang = 'ar';
-        } else {
-            html.setAttribute('dir', 'ltr');
-            html.lang = 'en';
-        }
-        
-        // تحديث نص زر اللغة
-        langText.textContent = lang === 'en' ? 'English' : 'العربية';
-
-        // تحديث النصوص في الصفحة
-        document.querySelectorAll('[data-i18n]').forEach(element => {
-            const key = element.getAttribute('data-i18n');
-            if (translations[lang][key]) {
-                // التعامل مع النص داخل عنصر <span> لتجنب حذف التنسيق (highlight)
-                if (key === 'hero_title') {
-                    const originalSpan = element.querySelector('.highlight');
-                    if (originalSpan) {
-                        const newText = translations[lang][key];
-                        // تقسيم النص عند الكلمة المراد تنسيقها وإعادة بناء العنصر
-                        const parts = newText.split(' ');
-                        const lastWord = parts.pop();
-                        element.innerHTML = `${parts.join(' ')} <span class="highlight">${lastWord}</span>`;
-                    }
-                } else {
-                    element.textContent = translations[lang][key];
-                }
-            }
-        });
-
-        // حفظ اللغة في localStorage
-        localStorage.setItem('lang', lang);
-    }
-
-    // عرض/إخفاء قائمة اللغات عند الضغط على الزر
-    langBtn.addEventListener('click', (event) => {
-        langDropdown.classList.toggle('show');
-        event.stopPropagation(); // منع إغلاق القائمة عند النقر داخلها
+  const savedLang = localStorage.getItem('language') || 'en';
+  const languageSelect = document.getElementById('language-select');
+  if (languageSelect) {
+    languageSelect.value = savedLang;
+    setLanguage(savedLang);
+    languageSelect.addEventListener('change', (e) => {
+      setLanguage(e.target.value);
     });
-
-    // الاستماع للنقرات على خيارات اللغة
-    langOptions.forEach(option => {
-        option.addEventListener('click', (event) => {
-            event.preventDefault();
-            const newLang = event.target.getAttribute('data-lang');
-            setLanguage(newLang);
-            langDropdown.classList.remove('show'); // إغلاق القائمة بعد الاختيار
-        });
-    });
-
-    // إغلاق قائمة اللغات عند النقر في أي مكان آخر في الصفحة
-    document.addEventListener('click', (event) => {
-        if (!langDropdown.contains(event.target) && !langBtn.contains(event.target)) {
-            langDropdown.classList.remove('show');
-        }
-    });
-
-    // بدء العملية بتحميل الترجمات
-    fetchTranslations();
+  } else {
+    // تطبيق اللغة مباشرة إذا لم يتم إيجاد قائمة اختيار اللغة
+    setLanguage(savedLang);
+  }
 });
