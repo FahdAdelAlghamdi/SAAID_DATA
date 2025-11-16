@@ -9,99 +9,96 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-   <header> <nav>
-           <div class="logo">
-                <a href="index.html">SAAID</a>
-            </div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Program</a></li>
-                <li><a href="subscriptions.html">Subscriptions</a></li>
-            </ul>
-        <div class="user-actions">
-            <div class="language-switcher">
-                <button class="lang-btn">
-                    <i class="fas fa-globe"></i>
-                    <span class="lang-text">English</span>
-                </button>
-                <div class="lang-dropdown">
-                    <a href="#" class="lang-option" data-lang="en">English</a>
-                    <a href="#" class="lang-option" data-lang="ar">العربية</a>
-                </div>
-            </div>
-            <a href="login.html" class="login-btn">Login</a>
-            <a href="signup.html" class="signup-btn">Sign Up</a>
-        </div>
-        </nav>
-    </header>
+   <header>
+  <nav>
+    <div class="logo">
+      <a href="index.html" class="trans" data-key="logo">SAAID</a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html" class="trans" data-key="home">Home</a></li>
+      <li><a href="about.html" class="trans" data-key="about">About Program</a></li>
+      <li><a href="subscriptions.html" class="trans" data-key="subscriptions">Subscriptions</a></li>
+    </ul>
+    <div class="user-actions">
+      <div class="language-switcher">
+        <select id="language-select" aria-label="Choose Language">
+          <option value="en">English</option>
+          <option value="ar">العربية</option>
+        </select>
+      </div>
+      <a href="login.html" class="login-btn trans" data-key="login">Login</a>
+      <a href="signup.html" class="signup-btn trans" data-key="signup">Sign Up</a>
+    </div>
+  </nav>
+</header>
 
-    <main class="form-page">
-        <div class="form-card">
-            <div class="form-header">
-                <i class="fas fa-sign-in-alt icon"></i>
-                <h2>Login</h2>
-                <p>Enter your details to access your account</p>
-            </div>
-            <form action="#">
-                <div class="input-group">
-                    <label for="email"><i class="fas fa-envelope"></i> Email</label>
-                    <input type="email" id="email" placeholder="example@email.com">
-                </div>
-                <div class="input-group">
-                    <label for="password"><i class="fas fa-lock"></i> Password</label>
-                    <input type="password" id="password" placeholder="Enter password">
-                    <i class="fas fa-eye password-toggle"></i>
-                </div>
-                
-                <div class="remember-me-group">
-                    <input type="checkbox" id="remember-me" name="remember-me">
-                    <label for="remember-me">Remember Me</label>
-                </div>
-                
-                <button type="submit" class="submit-btn">Login</button>
-            </form>
-            <div class="form-footer">
-                <p>Don't have an account? <a href="signup.html">Create Account</a></p>
-            </div>
-        </div>
-    </main>
+   <main class="form-page">
+  <div class="form-card">
+    <div class="form-header">
+      <i class="fas fa-sign-in-alt icon"></i>
+      <h2><span class="trans" data-key="loginTitle">Login</span></h2>
+      <p><span class="trans" data-key="loginSubtitle">Enter your details to access your account</span></p>
+    </div>
+    <form action="#">
+      <div class="input-group">
+        <label for="email"><i class="fas fa-envelope"></i> <span class="trans" data-key="emailLabel">Email</span></label>
+        <input type="email" id="email" placeholder="example@email.com">
+      </div>
+      <div class="input-group">
+        <label for="password"><i class="fas fa-lock"></i> <span class="trans" data-key="passwordLabel">Password</span></label>
+        <input type="password" id="password" placeholder="Enter password">
+        <i class="fas fa-eye password-toggle"></i>
+      </div>
+      <div class="remember-me-group">
+        <input type="checkbox" id="remember-me" name="remember-me">
+        <label for="remember-me"><span class="trans" data-key="rememberMeLabel">Remember Me</span></label>
+      </div>
+      <button type="submit" class="submit-btn"><span class="trans" data-key="loginButton">Login</span></button>
+    </form>
+    <div class="form-footer">
+      <p><span class="trans" data-key="noAccountText">Don't have an account?</span> <a href="signup.html"><span class="trans" data-key="createAccountLink">Create Account</span></a></p>
+    </div>
+  </div>
+</main>
+ 
+<footer>
+  <div class="footer-container">
+    <div class="footer-section about">
+      <h3 class="trans" data-key="footerTitle">SAAID</h3>
+      <p class="trans" data-key="footerSubtitle">Your AI-Powered Driving Training Partner. Join the modern training revolution for safe and professional driving.</p>
+    </div>
     
-    <footer>
-        <div class="footer-container">
-            <div class="footer-section about">
-                <h3>SAAID</h3>
-                <p>Your AI-Powered Driving Training Partner. Join the modern training revolution for safe and professional driving.</p>
-            </div>
-            
-            <div class="footer-section links">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Program</a></li>
-                    <li><a href="subscriptions.html">Subscriptions</a></li>
-                    <li><a href="login.html">Login</a></li>
-                </ul>
-            </div>
-            
-            <div class="footer-section contact">
-                <h3>Contact Us</h3>
-                <p><i class="fas fa-map-marker-alt"></i> Riyadh, Saudi Arabia</p>
-                <p><i class="fas fa-phone"></i> +966 50 123 4567</p>
-                <p><i class="fas fa-envelope"></i> support@saaid.com</p>
-            </div>
-            
-            <div class="footer-section social">
-                <h3>Follow Us</h3>
-                <div class="social-links">
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            &copy; 2024 SAAID. All rights reserved.
-        </div>
-    </footer>
+    <div class="footer-section links">
+      <h3 class="trans" data-key="footerQuickLinksTitle">Quick Links</h3>
+      <ul>
+        <li><a href="index.html" class="trans" data-key="home">Home</a></li>
+        <li><a href="about.html" class="trans" data-key="about">About Program</a></li>
+        <li><a href="subscriptions.html" class="trans" data-key="subscriptions">Subscriptions</a></li>
+        <li><a href="login.html" class="trans" data-key="login">Login</a></li>
+      </ul>
+    </div>
+    
+    <div class="footer-section contact">
+      <h3 class="trans" data-key="footerContactUs">Contact Us</h3>
+      <p><i class="fas fa-map-marker-alt"></i> <span class="trans" data-key="footerAddress">Riyadh, Saudi Arabia</span></p>
+      <p><i class="fas fa-phone"></i> <span class="trans" data-key="footerPhone">+966 50 123 4567</span></p>
+      <p><i class="fas fa-envelope"></i> <span class="trans" data-key="footerEmail">support@saaid.com</span></p>
+    </div>
+    
+    <div class="footer-section social">
+      <h3 class="trans" data-key="footerFollowUs">Follow Us</h3>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    &copy; 2024 SAAID. <span class="trans" data-key="footerRights">All rights reserved.</span>
+  </div>
+</footer>
+
+    <script src="index.js"></script>
 </body>
 </html>
