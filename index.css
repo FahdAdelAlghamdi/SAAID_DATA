@@ -77,62 +77,35 @@ nav {
 }
 
 /* Language Switcher Styling */
-.language-switcher {
-    position: relative;
-    display: inline-block;
+.language-switcher select {
+  background-color: transparent; /* الحفاظ على خلفية شفافة كما في الزر */
+  color: #fff; /* نص أبيض ليناسب التصميم */
+  border: 1px solid rgba(255, 255, 255, 0.5); /* نفس لون الخطوط للزائر */
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1em;
+  appearance: none; /* إزالة الشكل الافتراضي */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url('data:image/svg+xml;utf8,<svg fill="white" height="10" viewBox="0 0 24 24" width="10" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>'); /* سهم القائمة */
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 10px;
+  transition: background-color 0.3s ease;
 }
 
-.lang-btn {
-    background-color: transparent;
-    color: #fff;
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    padding: 8px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 1em;
-    transition: background-color 0.3s ease;
+.language-switcher select:hover {
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
-.lang-btn:hover {
-    background-color: rgba(255, 255, 255, 0.1);
+.language-switcher select:focus {
+  outline: none;
+  border-color: #28a745; /* لون الحدود عند التركيز */
+  box-shadow: 0 0 5px #28a745;
 }
 
-.lang-btn .fas {
-    margin-right: 8px; /* Space between globe icon and text */
-}
-
-.lang-dropdown {
-    display: none;
-    position: absolute;
-    top: 110%; /* Adjust the distance from the button */
-    left: 0;
-    margin-top: 5px;
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    overflow: hidden;
-    z-index: 20;
-    min-width: 120px;
-    border: 1px solid #ddd;
-}
-
-/* JavaScript will add this class to show the dropdown */
-.lang-dropdown.show {
-    display: block;  
-}
-
-.lang-option {
-    display: block;
-    padding: 10px 15px;
-    color: #333; /* Dark text color for options */
-    text-align: left;
-    transition: background-color 0.2s ease;
-}
-
-.lang-option:hover {
-    background-color: #f1f1f1;
-}
 
 /* Active language color from the screenshot */
 .lang-option[data-lang="en"] {
